@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Nikita Jain</h1>
+        <p>Full Stack Web Devloper & Website Devloper </p>
+    </section>
+
+    <!-- About Section -->
+<section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+        <img src="1.jpeg" alt="Your Image" class="about-image">
+        <p>
+            I am a passionate <strong>Full-Stack Developer</strong> and <strong>Website Designer</strong>, 
+            dedicated to building dynamic and user-friendly web applications. With expertise in both 
+            <strong>frontend and backend development</strong>, I create seamless digital experiences 
+            that combine aesthetic design with powerful functionality.
+        </p>
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project" onclick="openPopup('Project 1')">Project 1</div>
+            <div class="project" onclick="openPopup('Project 2')">Project 2</div>
+            <div class="project" onclick="openPopup('Project 3')">Project 3</div>
+            <div class="project" onclick="openPopup('Project 4')">Project 4</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=your.email@example.com" target="_blank">nj499990@gmail.com</a></p>
+    </section>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p>Details about the selected project.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
